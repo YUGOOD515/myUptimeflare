@@ -1,7 +1,7 @@
 name = "uptimeflare_worker"
 main = "src/index.ts"
 compatibility_date = "2025-04-02"
-compatibility_flags = [ "nodejs_compat" ]
+compatibility_flags = ["nodejs_compat", "global_fetch_strictly_public"]
 
 [[d1_databases]]
 binding = "UPTIMEFLARE_D1"

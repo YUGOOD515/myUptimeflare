@@ -36,7 +36,7 @@ resource "cloudflare_workers_script" "uptimeflare_worker" {
   content_file        = "worker/dist/index.js"
   content_sha256      = filesha256("worker/dist/index.js")
   compatibility_date  = "2025-04-02"
-  compatibility_flags = ["nodejs_compat"]
+  compatibility_flags = ["nodejs_compat", "global_fetch_strictly_public"]
 
   observability = {
     enabled = true
